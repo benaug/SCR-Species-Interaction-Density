@@ -21,3 +21,5 @@ lambda2.cell[1:n.cells] <- InSS[1:n.cells]*exp(D.beta12*D.cov2[1:n.cells])*h[1:n
 
 As with the soft-core point process approach, this model seems to require heroic SCR data sets. The testscripts are set up with 144 traps and detection turned up higher than is realistic in most cases.
 Identifiability is better if no RSF covariate is used. There is a test script that uses the RSF covariate and another that does not.
+
+Repository for soft-core approach: https://github.com/benaug/SCR-Species-Interaction-SoftcorePP
