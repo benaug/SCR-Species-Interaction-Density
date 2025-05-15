@@ -23,3 +23,5 @@ As with the soft-core point process approach, this model seems to require heroic
 Identifiability is better if no RSF covariate is used. There is a test script that uses the RSF covariate and another that does not.
 
 Repository for soft-core approach: https://github.com/benaug/SCR-Species-Interaction-SoftcorePP
+
+These models use count prior data augmentation: https://github.com/benaug/SCR-Count-Prior-Data-Augmentation
