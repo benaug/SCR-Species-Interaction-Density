@@ -23,8 +23,6 @@ NimModel <- nimbleCode({
   D2.intercept <- D02*cellArea
   lambda1.cell[1:n.cells] <- InSS[1:n.cells]*exp(D.beta11*D.cov1[1:n.cells])
   use.dist1.sum[1:n.cells] <- sumUse(use.dist=use.dist1[1:M1,1:n.cells],z=z1[1:M1])
-  #use.dist1.sum is E[N] in each cell on each occasion, use.dist1.sum/cellArea is E[D] in each cell
-  #base units in km^2, use per 100km^2 for interaction
   # 100*use.dist1.sum[1:n.cells]/cellArea this is expected density of realized individuals in N/100km^2 units
   #given that realized individuals are moving around their home range, what is expected number per unit area in each cell
   #at any snapshot in time? Assuming individual site use choices are categorical(use.dist[i,1:n.cells]) and independent.
